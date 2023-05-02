@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration Form</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="lg:flex container mx-auto py-8">
+      <div class="lg:w-2/5 hidden lg:block">
+        <img class="lg:h-[900px]" src=" images/registerFormImage.svg" alt="" />
+      </div>
+      <div class="font-sans antialiased bg-grey-lightest p-6 lg:p-16 lg:w-3/5">
+        <!-- Top Nav -->
+        <!-- Content -->
+        <div class="">
+          <div class="">
+            <div class=" ">
+              <div
+                class="py-4 md:px-8 text-black text-[35px] font-serif font-[400] text-center"
+              >
+                Login
+              </div>
+              <div class="py-4 md:px-8">
+                <div class="mb-4">
+                  <label class="block text-[14px] mb-1" for="email"
+                    >Enter Email</label
+                  >
+                  <input
+                    class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                    id="email"
+                    type="email"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label class="block text-[14px] mb-1" for="password"
+                    >Password</label
+                  >
+
+                  <div class="relative">
+                    <input
+                      placeholder=""
+                      type="password"
+                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                    />
+                    <div
+                      class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5"
+                    >
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex justify-end">
+                  <label class=""
+                    ><a href="#" class="cursor-pointer border-gray-200"
+                      ><span>Forget Password?</span></a
+                    ></label
+                  >
+                </div>
+
+                <div class="flex items-center justify-between mt-8">
+                  <button
+                    class="block w-full p-4 rounded transition duration-300 bg-[#FB406C] text-white text-[15px]"
+                  >
+                    Register
+                  </button>
+                </div>
+
+                <div class="mt-6 grid grid-cols-3 items-center text-gray-400">
+                  <hr class="border-gray-400" />
+                  <p class="text-center text-sm">OR</p>
+                  <hr class="border-gray-400" />
+                </div>
+
+                <div class="my-4 text-center sm:flex justify-between">
+                  <div
+                    class="p-2 px-6 block bg-[#2066B9] rounded text-white my-2 flex items-center justify-center"
+                  >
+                    <img
+                      class="w-[20px] mr-3"
+                      src="images/facebookIcon.svg"
+                      alt=""
+                    />
+                    <a class="text-sm" href="#"> Login with Facebook </a>
+                  </div>
+                  <div
+                    class="p-2 px-6 block bg-[#D92047] rounded text-white my-2 flex items-center justify-center"
+                  >
+                    <img
+                      class="w-[20px] mr-3"
+                      src="images/gmail-icon.svg"
+                      alt=""
+                    />
+                    <a class="text-sm" href="#"> Login with Google </a>
+                  </div>
+                </div>
+
+                <div class="container mx-auto text-center px-8">
+                  <p class="mb-2">
+                    New Member?
+
+                    <a class="text-[#FB406C]" href="/smeRegister.html">Register Now </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

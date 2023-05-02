@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registeration Form</title>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    input[type="checkbox"] + label {
+      display: block;
+      margin: 0.2em;
+      cursor: pointer;
+      padding: 0.2em;
+      font-family: "Arial";
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"] + label:before {
+      content: "\2714";
+      border: 0.1em solid #000;
+      border-radius: 0.2em;
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      padding-left: 0.2em;
+      padding-bottom: 0.3em;
+      margin-right: 0.2em;
+      vertical-align: bottom;
+      color: transparent;
+      transition: 0.2s;
+    }
+
+    /* input[type="checkbox"] + label:active:before {
+      transform: scale(0);
+    } */
+
+    input[type="checkbox"]:checked + label:before {
+      background-color: #fb406c;
+      border-color: #fb406c;
+      color: #fff;
+    }
+
+    /* input[type="checkbox"]:disabled + label:before {
+      transform: scale(1);
+      border-color: #aaa;
+    } */
+
+    /* input[type="checkbox"]:checked:disabled + label:before {
+      transform: scale(1);
+      background-color: #f7c28f;
+      border-color: #f7c28f;
+    } */
+  </style>
+  <body>
+    <div class="lg:flex container mx-auto py-8">
+      <div class="lg:w-2/5 hidden lg:block">
+        <img
+          class="h-[1000px] lg:h-[900px]"
+          src=" images/registerFormImage.svg"
+          alt=""
+        />
+      </div>
+      <div class="font-sans antialiased bg-grey-lightest p-6 lg:p-16 lg:w-3/5">
+        <!-- Top Nav -->
+        <!-- Content -->
+        <div class="">
+          <div class="">
+            <div class=" ">
+              <div
+                class="py-4 md:px-8 text-black text-[35px] font-serif font-[400] text-center"
+              >
+                Register Now
+              </div>
+              <div class="py-4 md:px-8">
+                <div class="sm:flex mb-4">
+                  <div class="sm:w-1/2 sm:mr-1">
+                    <label class="block text-[14px] mb-1" for="first_name"
+                      >First Name</label
+                    >
+                    <input
+                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                      id="first_name"
+                      type="text"
+                    />
+                  </div>
+                  <div class="sm:w-1/2 sm:ml-1">
+                    <label class="block text-[14px] mb-1" for="last_name"
+                      >Last Name</label
+                    >
+                    <input
+                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                      id="last_name"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label class="block text-[14px] mb-1" for="email"
+                    >Enter Email</label
+                  >
+                  <input
+                    class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                    id="email"
+                    type="email"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label class="block text-[14px] mb-1" for="password"
+                    >Password</label
+                  >
+
+                  <div class="relative">
+                    <input
+                      placeholder=""
+                      type="password"
+                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                    />
+                    <div
+                      class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5"
+                    >
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label class="block text-[14px] mb-1" for="password"
+                    >Confirm Password</label
+                  >
+
+                  <div class="relative">
+                    <input
+                      placeholder=""
+                      type="password"
+                      class="appearance-none border rounded w-full py-2 px-3 text-grey-darker"
+                    />
+                    <div
+                      class="absolute inset-y-0 right-0 pr-3 flex items-center text-sm leading-5"
+                    >
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-10">
+                  <div class="inline-flex items-center">
+                    <label
+                      class="relative flex cursor-pointer items-center rounded-full p-3"
+                      for="html"
+                      data-ripple-dark="true"
+                    >
+                      <input
+                        id="html"
+                        name="type"
+                        type="radio"
+                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500"
+                      />
+                      <div
+                        class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-[#FF5A60] opacity-0 transition-opacity peer-checked:opacity-100"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-3.5 w-3.5"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                        >
+                          <circle
+                            data-name="ellipse"
+                            cx="8"
+                            cy="8"
+                            r="8"
+                          ></circle>
+                        </svg>
+                      </div>
+                    </label>
+                    <label class="mt-px cursor-pointer select-none" for="html">
+                      Male
+                    </label>
+                  </div>
+                  <div class="inline-flex items-center">
+                    <label
+                      class="relative flex cursor-pointer items-center rounded-full p-3"
+                      for="react"
+                      data-ripple-dark="true"
+                    >
+                      <input
+                        id="react"
+                        name="type"
+                        type="radio"
+                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500"
+                      />
+                      <div
+                        class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-[#FF5A60] opacity-0 transition-opacity peer-checked:opacity-100"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-3.5 w-3.5"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                        >
+                          <circle
+                            data-name="ellipse"
+                            cx="8"
+                            cy="8"
+                            r="8"
+                          ></circle>
+                        </svg>
+                      </div>
+                    </label>
+                    <label class="mt-px cursor-pointer select-none" for="react">
+                      Female
+                    </label>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="my-4">
+                    <input
+                      type="checkbox"
+                      id="weekday-1"
+                      name="weekday-1"
+                      value="Friday"
+                      checked
+                    />
+
+                    <label for="weekday-1">
+                      By clicking Register Now you agree to our
+                      <a class="text-[#FB406C]" href="#"
+                        >terms and conditions</a
+                      ></label
+                    >
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between mt-8">
+                  <button
+                    class="block w-full p-4 rounded transition duration-300 bg-[#FB406C] text-white text-[15px]"
+                  >
+                    Register
+                  </button>
+                </div>
+
+                <div class="mt-6 grid grid-cols-3 items-center text-gray-400">
+                  <hr class="border-gray-400" />
+                  <p class="text-center text-sm">OR</p>
+                  <hr class="border-gray-400" />
+                </div>
+
+                <div class="my-4 text-center sm:flex justify-between">
+                  <div
+                    class="p-2 px-6 block bg-[#2066B9] rounded text-white my-2 flex items-center justify-center"
+                  >
+                    <img
+                      class="w-[20px] mr-3"
+                      src="images/facebookIcon.svg"
+                      alt=""
+                    />
+                    <a class="text-sm" href="#"> Login with Facebook </a>
+                  </div>
+                  <div
+                    class="p-2 px-6 block bg-[#D92047] rounded text-white my-2 flex items-center justify-center"
+                  >
+                    <img
+                      class="w-[20px] mr-3"
+                      src="images/gmail-icon.svg"
+                      alt=""
+                    />
+                    <a class="text-sm" href="#"> Login with Google </a>
+                  </div>
+                </div>
+
+                <div class="container mx-auto text-center px-8">
+                  <p class="mb-2">
+                    Already Member?
+
+                    <a class="text-[#FB406C]" href="/smeLogin.html">Login here </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
