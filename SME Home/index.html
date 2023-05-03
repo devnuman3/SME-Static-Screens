@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SME Matrimony</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <style>
+      /* .fontFamily {
+        font-family: "DM Serif Display", serif;
+      } */
+
+      .upcoming_events:before {
+        content: url("images/pinkHeart.svg");
+        position: absolute;
+        top: -30px;
+        left: 35%;
+      }
+      .upcoming_events1:before {
+        content: url("images/pinkHeart.svg");
+        position: absolute;
+        top: -30px;
+        left: -2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="font-[Helvetica]">
+      <!-- banner -->
+      <!-- <div
+        class="h-[281px] lg:h-[381px] xl:h-[450px] min-[1500px]:h-[550px] w-100 flex justify-center sm:gap-3 items-center flex-col bg-[url(./images/heroImage.svg)] bg-center bg-no-repeat bg-cover sm:bg-contain"
+      ></div> -->
+      <!-- header div -->
+      <div
+        class="header-2 h-[100vh] sm:h-[331px] lg:h-[381px] xl:h-[100vh] min-[1500px]:h-[100vh] w-100 sm:gap-3 bg-[url(./images/heroImage.svg)] bg-center bg-no-repeat bg-cover"
+      >
+        <nav class="py-2 md:py-4">
+          <div class="container px-4 mx-auto lg:flex lg:items-center h-auto">
+            <div class="flex justify-between items-center">
+              <a href="./index.html">
+                <img
+                  class="w-[200px] lg:w-[150px] xl:w-[200px]"
+                  src="./images/logo.svg"
+                  alt=""
+                />
+              </a>
+              <button
+                class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+                id="navbar-toggle"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+
+            <div
+              class="hidden lg:flex lg:items-center flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0"
+              id="navbar-collapse"
+            >
+              <a
+                href="../SME Home/index.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-black-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Members</a
+              >
+              <a
+                href="../SME Events/Events.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-black-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Matrimonial Events</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-black-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Chat</a
+              >
+              <a
+                href="../SME Interests/smeInterests.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-black-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Interests</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-black-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Success Stories</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-black-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Plans</a
+              >
+              <div
+                class="bg-[#FB406C] justify-center flex w-[10rem] lg:w-[8rem] xl:w-[10rem] p-3 lg:px-2 md:mx-2 text-white rounded xl:text-sm"
+              >
+                <img class="" src="./images/user.svg" alt="" />
+                <a href="../SME Register/smeRegister.html">
+                  <button class="ms-2 text-[16px] xl:text-[16px] lg:text-sm">
+                    Login/Register
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="">
+        <div
+          class="flex flex-col justify-center items-center my-12 container mx-auto px-8"
+        >
+          <h1
+            class="upcoming_events1 text-[#FB406C] text-center text-[25px] sm:text-[40px] font-serif relative"
+          >
+            What is SME matrimony
+          </h1>
+
+          <p class="text-[18px] max-w-[75rem] text-center text-[#444444]">
+            Welcome to SME Matrimony. The world's first matchmaking website that
+            pre-screens all its candidates through our Matrimonial events to
+            ensure they are educated, well settled, and belong to a good family
+            background. The only matchmaking website that offers the most
+            comprehensive pre-screening of candidates that the Muslim community
+            has to offer!
+          </p>
+        </div>
+
+        <div
+          class="w-[100%] p-12 my-12"
+          style="
+            background: linear-gradient(
+              87.57deg,
+              #fb406c 0%,
+              rgba(234, 20, 126, 0.95) 0%,
+              #1baacc 99.61%
+            );
+          "
+        >
+          <div class="my-12 container mx-auto px-8">
+            <h1
+              class="text-[30px] sm:text-[45px] text-center text-white font-serif"
+            >
+              Happy Couples
+            </h1>
+            <p class="text-[18px] text-center text-[#FEFEFE]">
+              Sallam, We are very happy that you are part of SME Matrimony. We
+              love all of our customers, and that includes you!
+            </p>
+
+            <div class="flex flex-wrap gap-8 justify-center">
+              <div class="mt-12">
+                <img class="w-[200px]" src="images/wedding_image1.svg" alt="" />
+                <div class="bg-[#FB406C] flex justify-center w-[200px] p-3">
+                  <img src="images/link_icon.svg" alt="" />
+                  <button class="text-[13px] text-white ms-3">
+                    View Story
+                  </button>
+                </div>
+              </div>
+
+              <div class="mt-12">
+                <img class="w-[200px]" src="images/wedding_image1.svg" alt="" />
+                <div class="bg-[#FB406C] flex justify-center w-[200px] p-3">
+                  <img src="images/link_icon.svg" alt="" />
+                  <button class="text-[13px] text-white ms-3">
+                    View Story
+                  </button>
+                </div>
+              </div>
+
+              <div class="mt-12">
+                <img class="w-[200px]" src="images/wedding_image1.svg" alt="" />
+                <div class="bg-[#FB406C] flex justify-center w-[200px] p-3">
+                  <img src="images/link_icon.svg" alt="" />
+                  <button class="text-[13px] text-white ms-3">
+                    View Story
+                  </button>
+                </div>
+              </div>
+
+              <div class="mt-12">
+                <img class="w-[200px]" src="images/wedding_image1.svg" alt="" />
+                <div class="bg-[#FB406C] flex justify-center w-[200px] p-3">
+                  <img src="images/link_icon.svg" alt="" />
+                  <button class="text-[13px] text-white ms-3">
+                    View Story
+                  </button>
+                </div>
+              </div>
+
+              <div class="mt-12">
+                <img class="w-[200px]" src="images/wedding_image1.svg" alt="" />
+                <div class="bg-[#FB406C] flex justify-center w-[200px] p-3">
+                  <img src="images/link_icon.svg" alt="" />
+                  <button class="text-[13px] text-white ms-3">
+                    View Story
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mx-auto px-8">
+          <h1
+            class="upcoming_events text-[45px] text-center text-[#FB406C] font-serif relative"
+          >
+            New Members
+          </h1>
+
+          <p class="text-[18px] text-center text-[#444444]">
+            Sallam, We are very happy that you are part of SME Matrimony. We
+            love all of our customers, and that includes you!
+          </p>
+
+          <div
+            class="sm:flex gap-4 w-[90%] justify-between flex-wrap"
+            style="margin: 3rem auto"
+          >
+            <div
+              class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+            >
+              <div>
+                <img src="images/thumb_8_1680500967.jpg.svg" alt="" />
+              </div>
+              <div class="w-[100%] flex justify-between items-center p-4">
+                <p class="text-[20px] text-dark font-medium">rukshana</p>
+                <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+              </div>
+              <div class="w-[100%] p-4 font-lg font-normal">
+                <p>
+                  Age <span>26</span> years, <span>Lahore</span>,
+                  <span>Pakistan</span>
+                </p>
+                <p>Graphic Designer</p>
+              </div>
+
+              <div class="w-[100%]">
+                <button
+                  class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                >
+                  Send message
+                </button>
+                <div class="w-[100%] flex justify-center items-center">
+                  <div
+                    class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                  >
+                    <img src="./images/crose.svg" alt="image" />
+                  </div>
+                  <div
+                    class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                  >
+                    <img src="./images/blueHeart.svg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+            >
+              <div>
+                <img src="images/thumb_image_1679507401.jpeg.svg" alt="" />
+              </div>
+              <div class="w-[100%] flex justify-between items-center p-4">
+                <p class="text-[20px] text-dark font-medium">wpdatingcom</p>
+                <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+              </div>
+              <div class="w-[100%] p-4 font-lg font-normal">
+                <p>
+                  Age <span>60</span> years, <span>Dubai</span>,
+                  <span>UAE</span>
+                </p>
+                <p>Doctor</p>
+              </div>
+
+              <div class="w-[100%]">
+                <button
+                  class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                >
+                  Send message
+                </button>
+                <div class="w-[100%] flex justify-center items-center">
+                  <div
+                    class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                  >
+                    <img src="./images/crose.svg" alt="image" />
+                  </div>
+                  <div
+                    class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                  >
+                    <img src="./images/blueHeart.svg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+            >
+              <div>
+                <img src="images/thumb_5_1680505640.png.svg" alt="" />
+              </div>
+              <div class="w-[100%] flex justify-between items-center p-4">
+                <p class="text-[20px] text-dark font-medium">nikeshMaharjan</p>
+                <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+              </div>
+              <div class="w-[100%] p-4 font-lg font-normal">
+                <p>
+                  Age <span>60</span> years, <span>Dubai</span>,
+                  <span>UAE</span>
+                </p>
+                <p>Doctor</p>
+              </div>
+
+              <div class="w-[100%]">
+                <button
+                  class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                >
+                  Send message
+                </button>
+                <div class="w-[100%] flex justify-center items-center">
+                  <div
+                    class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                  >
+                    <img src="./images/crose.svg" alt="image" />
+                  </div>
+                  <div
+                    class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                  >
+                    <img src="./images/blueHeart.svg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+            >
+              <div>
+                <img src="images/thumb_2_1680245679.jpeg.svg" alt="" />
+              </div>
+              <div class="w-[100%] flex justify-between items-center p-4">
+                <p class="text-[20px] text-dark font-medium">jonbro</p>
+                <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+              </div>
+              <div class="w-[100%] p-4 font-lg font-normal">
+                <p>
+                  Age <span>60</span> years, <span>Lahore</span>,
+                  <span>Pakistan</span>
+                </p>
+                <p>Graphic Designer</p>
+              </div>
+
+              <div class="w-[100%]">
+                <button
+                  class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                >
+                  Send message
+                </button>
+                <div class="w-[100%] flex justify-center items-center">
+                  <div
+                    class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                  >
+                    <img src="./images/crose.svg" alt="image" />
+                  </div>
+                  <div
+                    class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                  >
+                    <img src="./images/blueHeart.svg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-[100%] sm:px-28 lg:p-4 my-12"
+          style="
+            background: linear-gradient(
+              87.57deg,
+              #fb406c 0%,
+              rgba(234, 20, 126, 0.95) 0%,
+              #1baacc 99.61%
+            );
+          "
+        >
+          <div class="container mx-auto px-8 py-[100px]">
+            <h1
+              class="text-[30px] sm:text-[40px] font-serif text-[#FEFEFE] text-center"
+            >
+              Upcoming Events
+            </h1>
+            <div
+              class="flex gap-4 w-[90%] flex-wrap justify-between"
+              style="margin: 3rem auto"
+            >
+              <div class="rounded-lg shadow-lg lg:w-[32%]">
+                <img
+                  alt="Placeholder"
+                  class="w-full"
+                  src="./images/thumb_8_1680500967.jpg.svg"
+                />
+                <div
+                  class="flex items-center justify-between leading-tight p-2 md:p-4 bg-white"
+                >
+                  <h1 class="font-semibold text-xl leading-7 text-[ #343434]">
+                    Dubai Events
+                  </h1>
+                  <p
+                    class="flex items-center gap-1 font-normal text-sm font-[Helvetica] text-[#1BAACC]"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true mt-2"></i
+                    >Lahore, Pakistan
+                  </p>
+                </div>
+                <div class="leading-none p-2 md:p-4 bg-white">
+                  <p
+                    class="text-[#444444] font-[Helvetica Light] text-sm font-normal"
+                  >
+                    Matrimonial events description here Matrimonial events
+                    description hereMatrimonial events description here
+                  </p>
+
+                  <p
+                    class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"
+                  >
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023
+                  </p>
+                </div>
+                <button
+                  class="rounded-bl-lg border-2 bg-[#FB406C] border-[#FB406C] p-2 w-full text-center text-white font-normal text-base font-[Helvetica]"
+                >
+                  View Details
+                </button>
+              </div>
+              <div class="rounded-lg shadow-lg my-12 lg:my-0 lg:w-[32%]">
+                <img
+                  alt="Placeholder"
+                  class="w-full"
+                  src="./images/thumb_8_1680500967.jpg.svg"
+                />
+                <div
+                  class="flex items-center justify-between leading-tight p-2 md:p-4 bg-white"
+                >
+                  <h1 class="font-semibold text-xl leading-7 text-[ #343434]">
+                    Dubai Events
+                  </h1>
+                  <p
+                    class="flex items-center gap-1 font-normal text-sm font-[Helvetica] text-[#1BAACC]"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true mt-2"></i
+                    >Lahore, Pakistan
+                  </p>
+                </div>
+                <div
+                  class="items-center justify-between leading-none p-2 md:p-4 bg-white"
+                >
+                  <p
+                    class="text-[#444444] font-[Helvetica Light] text-sm font-normal"
+                  >
+                    Matrimonial events description here Matrimonial events
+                    description hereMatrimonial events description here
+                  </p>
+
+                  <p
+                    class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"
+                  >
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023
+                  </p>
+                </div>
+                <button
+                  class="rounded-bl-lg border-2 bg-[#FB406C] border-[#FB406C] p-2 w-full text-center text-white font-normal text-base font-[Helvetica]"
+                >
+                  View Details
+                </button>
+              </div>
+              <div class="rounded-lg shadow-lg lg:w-[32%]">
+                <img
+                  alt="Placeholder"
+                  class="w-full"
+                  src="./images/thumb_8_1680500967.jpg.svg"
+                />
+                <div
+                  class="flex items-center justify-between leading-tight p-2 md:p-4 bg-white"
+                >
+                  <h1 class="font-semibold text-xl leading-7 text-[ #343434]">
+                    Dubai Events
+                  </h1>
+                  <p
+                    class="flex items-center gap-1 font-normal text-sm font-[Helvetica] text-[#1BAACC]"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true mt-2"></i
+                    >Lahore, Pakistan
+                  </p>
+                </div>
+                <div
+                  class="items-center justify-between leading-none p-2 md:p-4 bg-white"
+                >
+                  <p
+                    class="text-[#444444] font-[Helvetica Light] text-sm font-normal"
+                  >
+                    Matrimonial events description here Matrimonial events
+                    description hereMatrimonial events description here
+                  </p>
+
+                  <p
+                    class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"
+                  >
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023
+                  </p>
+                </div>
+                <button
+                  class="rounded-bl-lg border-2 bg-[#FB406C] border-[#FB406C] p-2 w-full text-center text-white font-normal text-base font-[Helvetica]"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button
+                class="text-white border border-white p-3 rounded-md mb-8"
+              >
+                View All Events
+              </button>
+              <p class="text-[40px] font-serif text-white">Past Events</p>
+            </div>
+
+            <div
+              class="flex gap-4 flex-wrap justify-between w-[90%]"
+              style="margin: 3rem auto"
+            >
+              <div class="rounded-lg shadow-lg lg:w-[32%]">
+                <img
+                  alt="Placeholder"
+                  class="w-full"
+                  src="./images/thumb_8_1680500967.jpg.svg"
+                />
+                <div
+                  class="flex items-center justify-between leading-tight p-2 md:p-4 bg-white"
+                >
+                  <h1 class="font-semibold text-xl leading-7 text-[ #343434]">
+                    Dubai Events
+                  </h1>
+                  <p
+                    class="flex items-center gap-1 font-normal text-sm font-[Helvetica] text-[#1BAACC]"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true mt-2"></i
+                    >Lahore, Pakistan
+                  </p>
+                </div>
+                <div class="leading-none p-2 md:p-4 bg-white">
+                  <p
+                    class="text-[#444444] font-[Helvetica Light] text-sm font-normal"
+                  >
+                    Matrimonial events description here Matrimonial events
+                    description hereMatrimonial events description here
+                  </p>
+
+                  <p
+                    class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"
+                  >
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023
+                  </p>
+                </div>
+                <button
+                  class="rounded-bl-lg border-2 bg-[#FB406C] border-[#FB406C] p-2 w-full text-center text-white font-normal text-base font-[Helvetica]"
+                >
+                  View Details
+                </button>
+              </div>
+              <div class="rounded-lg shadow-lg my-12 lg:my-0 lg:w-[32%]">
+                <img
+                  alt="Placeholder"
+                  class="w-full"
+                  src="./images/thumb_8_1680500967.jpg.svg"
+                />
+                <div
+                  class="flex items-center justify-between leading-tight p-2 md:p-4 bg-white"
+                >
+                  <h1 class="font-semibold text-xl leading-7 text-[ #343434]">
+                    Dubai Events
+                  </h1>
+                  <p
+                    class="flex items-center gap-1 font-normal text-sm font-[Helvetica] text-[#1BAACC]"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true mt-2"></i
+                    >Lahore, Pakistan
+                  </p>
+                </div>
+                <div
+                  class="items-center justify-between leading-none p-2 md:p-4 bg-white"
+                >
+                  <p
+                    class="text-[#444444] font-[Helvetica Light] text-sm font-normal"
+                  >
+                    Matrimonial events description here Matrimonial events
+                    description hereMatrimonial events description here
+                  </p>
+
+                  <p
+                    class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"
+                  >
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023
+                  </p>
+                </div>
+                <button
+                  class="rounded-bl-lg border-2 bg-[#FB406C] border-[#FB406C] p-2 w-full text-center text-white font-normal text-base font-[Helvetica]"
+                >
+                  View Details
+                </button>
+              </div>
+              <div class="rounded-lg shadow-lg lg:w-[32%]">
+                <img
+                  alt="Placeholder"
+                  class="w-full"
+                  src="./images/thumb_8_1680500967.jpg.svg"
+                />
+                <div
+                  class="flex items-center justify-between leading-tight p-2 md:p-4 bg-white"
+                >
+                  <h1 class="font-semibold text-xl leading-7 text-[ #343434]">
+                    Dubai Events
+                  </h1>
+                  <p
+                    class="flex items-center gap-1 font-normal text-sm font-[Helvetica] text-[#1BAACC]"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true mt-2"></i
+                    >Lahore, Pakistan
+                  </p>
+                </div>
+                <div
+                  class="items-center justify-between leading-none p-2 md:p-4 bg-white"
+                >
+                  <p
+                    class="text-[#444444] font-[Helvetica Light] text-sm font-normal"
+                  >
+                    Matrimonial events description here Matrimonial events
+                    description hereMatrimonial events description here
+                  </p>
+
+                  <p
+                    class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"
+                  >
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023
+                  </p>
+                </div>
+                <button
+                  class="rounded-bl-lg border-2 bg-[#FB406C] border-[#FB406C] p-2 w-full text-center text-white font-normal text-base font-[Helvetica]"
+                >
+                  View Details
+                </button>
+              </div>
+            </div>
+            <div class="text-center">
+              <button
+                class="text-white border border-white p-3 rounded-md mb-8"
+              >
+                View All Events
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center my-12 container mx-auto px-8">
+          <h1 class="text-[30px] sm:text-[40px] font-serif text-center">
+            Find Your Partner In Just Few Steps
+          </h1>
+          <div class="flex justify-center">
+            <p class="text-[#343434] text-[18px] max-w-[750px]">
+              WP Matrimony will help you find your perfect match with just a few
+              steps. You focus on what is most important to you, we do all the
+              work.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex justify-between w-[90%] flex-wrap container px-8"
+          style="margin: 3rem auto"
+        >
+          <div class="">
+            <div class="flex justify-center">
+              <img src="images/span.elementor-icon.svg" alt="" />
+            </div>
+            <h4 class="text-[20px] font-serif text-center">Register</h4>
+            <p class="max-w-[300px] text-center">
+              Register to our website, fill up your profile completely, and put
+              a beautiful image on your profile.
+            </p>
+          </div>
+          <div>
+            <div class="flex justify-center">
+              <img src="images/span.elementor-icon1.svg" alt="" />
+            </div>
+
+            <h4 class="text-[20px] text-[20px] font-serif text-center">
+              Find Your Partner
+            </h4>
+            <p class="max-w-[300px] text-center">
+              You can find your partners online here, or you can also attend our
+              marriage events and meet hundreds of people who are also looking
+              for a partner for life.
+            </p>
+          </div>
+          <div>
+            <div class="flex justify-center">
+              <img src="images/span.elementor-icon2.svg" alt="" />
+            </div>
+
+            <h4 class="text-[20px] font-serif text-center">Connect</h4>
+            <p class="max-w-[300px] text-center">
+              Join with 1000's of Muslim community online around the world who
+              are here just for marriage.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer div -->
+      <div>
+        <div
+          class="bg-no-repeat bg-cover bg-[url('images/footerImage.svg')] text-white"
+        >
+          <div class="flex justify-center pt-12">
+            <img class="" src="images/heart.svg" alt="" />
+          </div>
+          <h1
+            class="text-[30px] leading-8 sm:text-[42px] sm:leading-10 text-center my-8 m-7 font-serif"
+          >
+            Please contact us if you have any questions
+          </h1>
+          <div class="container px-4 mx-auto">
+            <div class="flex justify-between gap-8 flex-wrap m-10">
+              <div class="mb-12">
+                <i class="fa-solid fa-phone"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80"
+                  >Give Us A Call</span
+                >
+
+                <br />
+                <a class="ms-7 text-[20px]" href="#">+971 52 204 7059</a>
+                <hr class="ms-7" />
+              </div>
+              <div class="mb-12">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80"
+                  >Send Us Email</span
+                >
+
+                <br />
+                <a class="ms-7 text-[20px]" href="#">info@smematrimony.com</a>
+                <hr class="ms-7" />
+              </div>
+              <div class="mb-12">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80">
+                  Head Office</span
+                >
+
+                <br />
+                <a class="ms-6 text-[22px]" href="#"
+                  >224 Dorchester place Waterloo <br class="" />
+                  <span class="ms-6 text-[22px]"
+                    >Ontario n2t2h7 Canada.</span
+                  ></a
+                >
+                <hr class="ms-6" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-white py-2 md:py-4">
+            <div class="container px-4 mx-auto flex items-center">
+              <div class="flex justify-between items-center me-8">
+                <img
+                  class="lg:w-[150px] xl:w-[200px]"
+                  src="./images/logo.svg"
+                  alt=""
+                />
+              </div>
+
+              <div class="flex flex-wrap ml-auto mt-3 lg:mt-0">
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Home</a
+                >
+
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Matrimonial Events</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Privacy Policy</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Terms & Conditions</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+            <hr class="container px-4 mx-auto mt-5" />
+          </div>
+        </div>
+        <div class="container px-4 mx-auto">
+          <div class="flex justify-between flex-wrap items-center">
+            <p class="text-gray-400 me-7 mt-5 text-[14px]">
+              Copyright © 2023 smematrimony.com - All Rights Reserved.
+            </p>
+            <div class="flex gap-4 mt-5">
+              <i
+                class="fa-brands fa-facebook-f text-white bg-[#FB406C] w-[32px] flex justify-center p-2 rounded-full"
+              ></i>
+              <img
+                class="text-white bg-[#FB406C] p-2 rounded-full"
+                src="images/youtube.svg"
+                alt=""
+              />
+
+              <i
+                class="fa-brands fa-instagram text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+
+              <i
+                class="fa-brands fa-whatsapp text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+              <i
+                class="fa-brands fa-meetup text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let toggleBtn = document.querySelector("#navbar-toggle");
+      let collapse = document.querySelector("#navbar-collapse");
+
+      toggleBtn.onclick = () => {
+        collapse.classList.toggle("hidden");
+        collapse.classList.toggle("flex");
+      };
+    </script>
+  </body>
+</html>

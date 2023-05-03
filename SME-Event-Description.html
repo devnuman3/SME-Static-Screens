@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Event Description</title>
+  </head>
+  <style>
+    .event-des-heading::before {
+      content: url(./pseudo.svg);
+      position: relative;
+      top: -30px;
+      left: 10px;
+    }
+  </style>
+  <body>
+    <!-- header -->
+    <div class="header-2">
+      <nav class="bg-white py-2 md:py-4">
+        <div class="container px-4 mx-auto lg:flex lg:items-center h-auto">
+          <div class="flex justify-between items-center">
+            <a href="../SME Home/index.html">
+              <img
+                class="w-[200px] lg:w-[150px] xl:w-[200px]"
+                src="./images/logo.svg"
+                alt=""
+              />
+            </a>
+            <button
+              class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+              id="navbar-toggle"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+
+          <div
+            class="hidden lg:flex lg:items-center flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0"
+            id="navbar-collapse"
+          >
+            <a
+              href="#"
+              class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+              >Members</a
+            >
+            <a
+              href="../SME Events/Events.html"
+              class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+              >Matrimonial Events</a
+            >
+            <a
+              href="#"
+              class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+              >Chat</a
+            >
+            <a
+              href="../SME Interests/smeInterests.html"
+              class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+              >Interests</a
+            >
+            <a
+              href="#"
+              class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+              >Success Stories</a
+            >
+            <a
+              href="#"
+              class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+              >Plans</a
+            >
+            <div
+              class="bg-[#FB406C] justify-center flex w-[10rem] lg:w-[8rem] xl:w-[10rem] p-3 lg:px-2 md:mx-2 text-white rounded xl:text-sm"
+            >
+              <img class="" src="./images/user.svg" alt="" />
+              <button class="ms-2 text-[16px] xl:text-[16px] lg:text-sm">
+                <a href="./SME Register/smeRegister.html">Login/Register</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- banner -->
+    <div
+      class="h-[481px] w-100 flex justify-center gap-4 items-center flex-col bg-center"
+      style="background-image: url(./banner.png)"
+    >
+      <p class="text-2xl text-slate-50">Our Events</p>
+      <h2 class="text-5xl text-slate-50 font-serif font-normal">
+        PAKISTAN EVENT
+      </h2>
+      <button
+        class="bg-[#FB406C] mt-7 px-9 py-4 font-semibold text-white inline-flex items-center space-x-2 rounded"
+      >
+        <svg
+          width="11"
+          height="14"
+          viewBox="0 0 11 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_73_2254)">
+            <path
+              d="M7.82606 8.21088C7.13052 8.69511 6.31706 8.95306 5.48552 8.95306C4.65397 8.95306 3.84051 8.69511 3.14498 8.21088C2.2481 8.65889 1.48142 9.35544 0.925603 10.2273C0.369785 11.0991 0.0453671 12.114 -0.0135253 13.1651C-0.0162284 13.2097 -0.0102804 13.2543 0.0039492 13.2963C0.0181788 13.3383 0.0403858 13.3768 0.0691901 13.4092C0.0980201 13.4414 0.132732 13.4669 0.171192 13.4843C0.209651 13.5016 0.251045 13.5104 0.292828 13.5102H10.6935C10.7353 13.5104 10.7767 13.5016 10.8152 13.4843C10.8536 13.4669 10.8883 13.4414 10.9172 13.4092C10.946 13.3768 10.9682 13.3383 10.9824 13.2963C10.9966 13.2543 11.0026 13.2097 10.9999 13.1651C10.9396 12.1122 10.6128 11.0962 10.0542 10.2242C9.49561 9.35222 8.72581 8.65664 7.82606 8.21088Z"
+              fill="white"
+            />
+            <path
+              d="M5.48581 8.30204C7.51614 8.30204 9.16205 6.55322 9.16205 4.39594C9.16205 2.23866 7.51614 0.489838 5.48581 0.489838C3.45548 0.489838 1.80957 2.23866 1.80957 4.39594C1.80957 6.55322 3.45548 8.30204 5.48581 8.30204Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_73_2254">
+              <rect
+                width="11"
+                height="13"
+                fill="white"
+                transform="translate(0 0.5)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+
+        <a href="../SME/Event Register add member/eventreg.html">
+          <span class="font-normal text-base">Register Now</span></a
+        >
+      </button>
+    </div>
+    <!-- banner end -->
+    <!-- heading -->
+    <div class="h-[250px] w-100 flex justify-center items-center">
+      <h1
+        class="event-des-heading text-5xl text-[#FB406C] font-serif font-medium"
+      >
+        About DUBAI EVENT
+      </h1>
+    </div>
+    <!-- heading END -->
+    <!-- content -->
+    <div class="h-auto w-9/12 mx-auto my-7">
+      <div class="w-9/12 mx-auto my-2">
+        <img src="./unsplash_S5DEUg2yUVU.png" alt="image" />
+      </div>
+      <div
+        class="text-center leading-10 text-lg text-dark flex items-center flex-col gap-5"
+      >
+        <p class="mb-5 mt-8">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+          distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+          cumque nihil impedit quo minus id quod maxime placeat facere possimus,
+          omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+          autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+          eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+          voluptatibus maiores alias consequatur aut perferendis doloribus
+          asperiores repellat."
+        </p>
+        <hr class="w-20 border-black" />
+        <p class="my-5">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+          distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+          cumque nihil impedit quo minus id quod maxime placeat facere possimus,
+          omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+          autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+          eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+          voluptatibus maiores alias consequatur aut perferendis doloribus
+          asperiores repellat."
+        </p>
+        <button
+          class="bg-[#FB406C] mt-7 px-9 py-4 font-semibold text-white inline-flex items-center space-x-2 rounded"
+        >
+          <svg
+            width="11"
+            height="14"
+            viewBox="0 0 11 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_73_2254)">
+              <path
+                d="M7.82606 8.21088C7.13052 8.69511 6.31706 8.95306 5.48552 8.95306C4.65397 8.95306 3.84051 8.69511 3.14498 8.21088C2.2481 8.65889 1.48142 9.35544 0.925603 10.2273C0.369785 11.0991 0.0453671 12.114 -0.0135253 13.1651C-0.0162284 13.2097 -0.0102804 13.2543 0.0039492 13.2963C0.0181788 13.3383 0.0403858 13.3768 0.0691901 13.4092C0.0980201 13.4414 0.132732 13.4669 0.171192 13.4843C0.209651 13.5016 0.251045 13.5104 0.292828 13.5102H10.6935C10.7353 13.5104 10.7767 13.5016 10.8152 13.4843C10.8536 13.4669 10.8883 13.4414 10.9172 13.4092C10.946 13.3768 10.9682 13.3383 10.9824 13.2963C10.9966 13.2543 11.0026 13.2097 10.9999 13.1651C10.9396 12.1122 10.6128 11.0962 10.0542 10.2242C9.49561 9.35222 8.72581 8.65664 7.82606 8.21088Z"
+                fill="white"
+              />
+              <path
+                d="M5.48581 8.30204C7.51614 8.30204 9.16205 6.55322 9.16205 4.39594C9.16205 2.23866 7.51614 0.489838 5.48581 0.489838C3.45548 0.489838 1.80957 2.23866 1.80957 4.39594C1.80957 6.55322 3.45548 8.30204 5.48581 8.30204Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_73_2254">
+                <rect
+                  width="11"
+                  height="13"
+                  fill="white"
+                  transform="translate(0 0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <a href="../SME/Event Register add member/eventreg.html"
+            ><span class="font-normal text-base">Register Now</span></a
+          >
+        </button>
+      </div>
+    </div>
+    <!-- content end-->
+    <!-- footer -->
+    <div
+      class="bg-no-repeat bg-cover bg-[url('images/footerImage.svg')] text-white"
+    >
+      <div class="flex justify-center pt-12">
+        <img class="" src="images/heart.svg" alt="" />
+      </div>
+      <h1
+        class="text-[30px] leading-8 sm:text-[42px] sm:leading-10 text-center my-8 m-7 font-serif"
+      >
+        Please contact us if you have any questions
+      </h1>
+      <div class="container px-4 mx-auto">
+        <div class="flex justify-between gap-8 flex-wrap m-10">
+          <div class="mb-12">
+            <i class="fa-solid fa-phone"></i>
+            <span class="text-[22px] ms-2 font-serif opacity-80"
+              >Give Us A Call</span
+            >
+
+            <br />
+            <a class="ms-7 text-[20px]" href="#">+971 52 204 7059</a>
+            <hr class="ms-7" />
+          </div>
+          <div class="mb-12">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="text-[22px] ms-2 font-serif opacity-80"
+              >Send Us Email</span
+            >
+
+            <br />
+            <a class="ms-7 text-[20px]" href="#">info@smematrimony.com</a>
+            <hr class="ms-7" />
+          </div>
+          <div class="mb-12">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="text-[22px] ms-2 font-serif opacity-80">
+              Head Office</span
+            >
+
+            <br />
+            <a class="ms-6 text-[22px]" href="#"
+              >224 Dorchester place Waterloo <br class="" />
+              <span class="ms-6 text-[22px]">Ontario n2t2h7 Canada.</span></a
+            >
+            <hr class="ms-6" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="bg-white py-2 md:py-4">
+        <div class="container px-4 mx-auto flex items-center">
+          <div class="flex justify-between items-center me-8">
+            <img
+              class="lg:w-[150px] xl:w-[200px]"
+              src="./images/logo.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="flex flex-wrap ml-auto mt-3 lg:mt-0">
+            <a
+              href="#"
+              class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+              >Home</a
+            >
+
+            <a
+              href="#"
+              class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+              >Matrimonial Events</a
+            >
+            <a
+              href="#"
+              class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+              >Terms & Conditions</a
+            >
+            <a
+              href="#"
+              class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+        <hr class="container px-4 mx-auto mt-5" />
+      </div>
+    </div>
+    <div class="container px-4 mx-auto">
+      <div class="flex justify-between flex-wrap items-center">
+        <p class="text-gray-400 me-7 mt-5 text-[14px]">
+          Copyright © 2023 smematrimony.com - All Rights Reserved.
+        </p>
+        <div class="flex gap-4 mt-5">
+          <i
+            class="fa-brands fa-facebook-f text-white bg-[#FB406C] w-[32px] flex justify-center p-2 rounded-full"
+          ></i>
+          <img
+            class="text-white bg-[#FB406C] p-2 rounded-full"
+            src="images/youtube.svg"
+            alt=""
+          />
+
+          <i
+            class="fa-brands fa-instagram text-white bg-[#FB406C] p-2 rounded-full"
+          ></i>
+
+          <i
+            class="fa-brands fa-whatsapp text-white bg-[#FB406C] p-2 rounded-full"
+          ></i>
+          <i
+            class="fa-brands fa-meetup text-white bg-[#FB406C] p-2 rounded-full"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+</html>

@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css"
+    />
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Interests</title>
+  </head>
+  <style>
+    .dark [role="tab"].active,
+    .dark [role="tab"].active:hover,
+    [role="tab"].active,
+    [role="tab"].active:hover {
+      border-color: #fb406c;
+      color: #fb406c;
+    }
+  </style>
+  <body class="scroll-smooth">
+    <div class="font-[Helvetica]">
+      <!-- header div -->
+      <div class="header-2">
+        <nav class="bg-white py-2 md:py-4">
+          <div class="container px-4 mx-auto lg:flex lg:items-center h-auto">
+            <div class="flex justify-between items-center">
+              <img
+                class="w-[200px] lg:w-[150px] xl:w-[200px]"
+                src="./images/logo.svg"
+                alt=""
+              />
+              <button
+                class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+                id="navbar-toggle"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+
+            <div
+              class="hidden lg:flex lg:items-center flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0"
+              id="navbar-collapse"
+            >
+              <a
+                href="../SME Home/index.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Members</a
+              >
+              <a
+                href="../SME Events/Events.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Matrimonial Events</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Chat</a
+              >
+              <a
+                href="../SME Interests/smeInterests.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Interests</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Success Stories</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Plans</a
+              >
+              <div
+                class="bg-[#FB406C] justify-center flex w-[10rem] lg:w-[8rem] xl:w-[10rem] p-3 lg:px-2 md:mx-2 text-white rounded xl:text-sm"
+              >
+                <img class="" src="./images/user.svg" alt="" />
+                <button class="ms-2 text-[16px] xl:text-[16px] lg:text-sm">
+                  <a href="../SME Register/smeRegister.html">Login/Register</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- banner -->
+      <div
+        class="h-[281px] lg:h-[381px] xl:h-[450px] min-[1500px]:h-[550px] w-100 flex justify-center sm:gap-3 items-center flex-col bg-[url(./images/banner.svg)] bg-center bg-no-repeat bg-cover sm:bg-contain"
+      >
+        <p class="text-[18px] text-slate-50">Check out your</p>
+        <h2
+          class="sm:text-[48px] text-[30px] text-slate-50 font-serif font-normal uppercase"
+        >
+          Interests List
+        </h2>
+      </div>
+      <!-- banner end -->
+      <!-- content -->
+      <div class="mx-auto">
+        <div
+          class="border-b border-[#EBEBEB]-200 dark:border-[#EBEBEB]-700 mb-4"
+        >
+          <!-- tabs menu -->
+          <ul
+            class="flex flex-wrap justify-center items-center -mb-px"
+            id="myTab"
+            data-tabs-toggle="#myTabContent"
+            role="tablist"
+          >
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block text-gray-500 hover:text-[#FB406C] hover:border-[#FB406C] rounded-t-lg sm:py-4 p-2 sm:px-4 text-sm font-medium text-center border-transparent border-b-2 dark:hover:text-[#FB406C]-300"
+                id="profile-tab"
+                data-tabs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                Accepted
+              </button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block text-base text-gray-500 hover:text-[#FB406C] hover:border-[#FB406C] active:text-[#FB406C] rounded-t-lg p-2 sm:py-4 sm:px-4 text-sm font-medium text-center border-transparent border-b-2 dark:hover:[#FB406C]-gray-300 active"
+                id="dashboard-tab"
+                data-tabs-target="#dashboard"
+                type="button"
+                role="tab"
+                aria-controls="dashboard"
+                aria-selected="true"
+              >
+                Requested
+              </button>
+            </li>
+            <li class="mr-2" role="presentation">
+              <button
+                class="inline-block text-base text-gray-500 hover:text-[#FB406C] hover:border-[#FB406C] rounded-t-lg p-2 sm:py-4 sm:px-4 text-sm font-medium text-center border-transparent border-b-2 dark:hover:text-[#FB406C]-300"
+                id="settings-tab"
+                data-tabs-target="#settings"
+                type="button"
+                role="tab"
+                aria-controls="settings"
+                aria-selected="false"
+              >
+                Intrest
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="inline-block text-gray-500 hover:text-[#FB406C] hover:border-[#FB406C] rounded-t-lg p-2 sm:py-4 sm:px-4 text-sm font-medium text-center border-transparent border-b-2 dark:hover:text-[#FB406C]-300"
+                id="contacts-tab"
+                data-tabs-target="#contacts"
+                type="button"
+                role="tab"
+                aria-controls="contacts"
+                aria-selected="false"
+              >
+                Rejected
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- tabs content -->
+        <div id="myTabContent " style="margin: 2rem 0">
+          <!-- accepted -->
+          <div
+            class="bg-gray-50 p-4 rounded-lg hidden w-10/12 mx-auto"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <!-- accepted card main div -->
+            <div class="sm:flex justify-between flex-wrap gap-4">
+              <!-- card 1 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Bilal</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2 me-2"
+                  >
+                    Send message
+                  </button>
+
+                  <div class="flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Bilal</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Bilal</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Bilal</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Requested -->
+          <div
+            class="bg-gray-50 p-4 rounded-lg w-10/12 mx-auto"
+            id="dashboard"
+            role="tabpanel"
+            aria-labelledby="dashboard-tab"
+          >
+            <!-- Requested card main div -->
+            <div class="sm:flex justify-between flex-wrap gap-4">
+              <!-- card 1 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Nafees</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2 me-2"
+                  >
+                    Send message
+                  </button>
+
+                  <div class="flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Nafees</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Nafees</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Nafees</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Intrest -->
+          <div
+            class="bg-gray-50 p-4 rounded-lg hidden w-10/12 mx-auto"
+            id="settings"
+            role="tabpanel"
+            aria-labelledby="settings-tab"
+          >
+            <!-- Intrest card main div -->
+            <div class="sm:flex justify-between flex-wrap gap-4">
+              <!-- card 1 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Rohail</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2 me-2"
+                  >
+                    Send message
+                  </button>
+
+                  <div class="flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Rohail</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Rohail</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Rohail</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card -->
+          </div>
+          <!-- Rejected -->
+          <div
+            class="bg-gray-50 p-4 rounded-lg hidden w-10/12 mx-auto"
+            id="contacts"
+            role="tabpanel"
+            aria-labelledby="contacts-tab"
+          >
+            <!-- Rejected card main div -->
+            <div class="sm:flex justify-between flex-wrap gap-4">
+              <!-- card 1 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Usama</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2 me-2"
+                  >
+                    Send message
+                  </button>
+
+                  <div class="flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Usama</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Usama</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div
+                class="sm:w-[48%] xl:w-[23%] h-auto rounded-lg shadow-lg flex flex-col justify-center items-center pb-3 mb-6 sm:mb-0"
+              >
+                <!-- colored section div -->
+                <div
+                  class="w-[100%] h-[166px] rounded-[10px]"
+                  style="
+                    background: linear-gradient(
+                      87.57deg,
+                      #fb406c 0%,
+                      rgba(234, 20, 126, 0.95) 0%,
+                      #1baacc 99.61%
+                    );
+                  "
+                ></div>
+                <!-- image section div -->
+                <div
+                  class="w-[198px] h-[199px] mt-[-99.9px] rounded-full border-[#FB406C] border-2"
+                >
+                  <img src="./images/thumb_8_1680500967.jpg.png" alt="image" />
+                </div>
+                <div class="w-[100%] flex justify-between items-center p-4">
+                  <p class="text-[20px] text-dark font-medium">Usama</p>
+                  <a href="#" class="text-[#66CC66] text-sm">View Profile</a>
+                </div>
+                <div class="w-[100%] p-4 font-lg font-normal">
+                  <p>
+                    Age <span>60</span> years, <span>Dubai</span>,
+                    <span>UAE</span>
+                  </p>
+                  <p>Doctor</p>
+                </div>
+
+                <div class="w-[100%]">
+                  <button
+                    class="py-2 bg-[#FB406C] text-white font-normal w-[-webkit-fill-available] mx-2"
+                  >
+                    Send message
+                  </button>
+                  <div class="w-[100%] flex justify-center items-center">
+                    <div
+                      class="flex justify-center items-center border-l-2 border-b-2 border-[#D92047] rounded-es-xl w-[50%] p-[13.5px] ms-2"
+                    >
+                      <img src="./images/crose.svg" alt="image" />
+                    </div>
+                    <div
+                      class="flex justify-center items-center border-x-2 border-b-2 border-[#1BAACC] rounded-ee-xl w-[50%] p-3 me-2"
+                    >
+                      <img src="./images/blueHeart.svg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content end-->
+
+      <!-- footer div -->
+      <div>
+        <div
+          class="bg-no-repeat bg-cover bg-[url('images/footerImage.svg')] text-white"
+        >
+          <div class="flex justify-center pt-12">
+            <img class="" src="images/heart.svg" alt="" />
+          </div>
+          <h1
+            class="text-[30px] leading-8 sm:text-[42px] sm:leading-10 text-center my-8 m-7 font-serif"
+          >
+            Please contact us if you have any questions
+          </h1>
+          <div class="container px-4 mx-auto">
+            <div class="flex justify-between gap-8 flex-wrap m-10">
+              <div class="mb-12">
+                <i class="fa-solid fa-phone"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80"
+                  >Give Us A Call</span
+                >
+
+                <br />
+                <a class="ms-7 text-[20px]" href="#">+971 52 204 7059</a>
+                <hr class="ms-7" />
+              </div>
+              <div class="mb-12">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80"
+                  >Send Us Email</span
+                >
+
+                <br />
+                <a class="ms-7 text-[20px]" href="#">info@smematrimony.com</a>
+                <hr class="ms-7" />
+              </div>
+              <div class="mb-12">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80">
+                  Head Office</span
+                >
+
+                <br />
+                <a class="ms-6 text-[22px]" href="#"
+                  >224 Dorchester place Waterloo <br class="" />
+                  <span class="ms-6 text-[22px]"
+                    >Ontario n2t2h7 Canada.</span
+                  ></a
+                >
+                <hr class="ms-6" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-white py-2 md:py-4">
+            <div class="container px-4 mx-auto flex items-center">
+              <div class="flex justify-between items-center me-8">
+                <img
+                  class="lg:w-[150px] xl:w-[200px]"
+                  src="./images/logo.svg"
+                  alt=""
+                />
+              </div>
+
+              <div class="flex flex-wrap ml-auto mt-3 lg:mt-0">
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Home</a
+                >
+
+                <a
+                  href="../SME Events/Events.html"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Matrimonial Events</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Privacy Policy</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Terms & Conditions</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+            <hr class="container px-4 mx-auto mt-5" />
+          </div>
+        </div>
+        <div class="container px-4 mx-auto">
+          <div class="flex justify-between flex-wrap items-center">
+            <p class="text-gray-400 me-7 mt-5 text-[14px]">
+              Copyright © 2023 smematrimony.com - All Rights Reserved.
+            </p>
+            <div class="flex gap-4 mt-5">
+              <i
+                class="fa-brands fa-facebook-f text-white bg-[#FB406C] w-[32px] flex justify-center p-2 rounded-full"
+              ></i>
+              <img
+                class="text-white bg-[#FB406C] p-2 rounded-full"
+                src="images/youtube.svg"
+                alt=""
+              />
+
+              <i
+                class="fa-brands fa-instagram text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+
+              <i
+                class="fa-brands fa-whatsapp text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+              <i
+                class="fa-brands fa-meetup text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let toggleBtn = document.querySelector("#navbar-toggle");
+      let collapse = document.querySelector("#navbar-collapse");
+
+      toggleBtn.onclick = () => {
+        collapse.classList.toggle("hidden");
+        collapse.classList.toggle("flex");
+      };
+    </script>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+</html>

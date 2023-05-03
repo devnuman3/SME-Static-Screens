@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Event Register add member</title>
+    <script
+      src="https://kit.fontawesome.com/63e8927567.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+
+    <div class="font-[Helvetica]">
+      <div class="header-2">
+        <nav class="bg-white py-2 md:py-4">
+          <div class="container px-4 mx-auto lg:flex lg:items-center h-auto">
+            <div class="flex justify-between items-center">
+             <a href="../SME Home/index.html"> <img
+              class="w-[200px] lg:w-[150px] xl:w-[200px]"
+              src="./images/logo.svg"
+              alt=""
+            /></a>
+              <button
+                class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+                id="navbar-toggle"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+
+            <div
+              class="hidden lg:flex lg:items-center flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0"
+              id="navbar-collapse"
+            >
+              <a
+                href="../SME Home/index.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Members</a
+              >
+              <a
+                href="../SME Events/Events.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Matrimonial Events</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Chat</a
+              >
+              <a
+                href="../SME Interests/smeInterests.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Interests</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Success Stories</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Plans</a
+              >
+              <div
+                class="bg-[#FB406C] justify-center flex w-[10rem] lg:w-[8rem] xl:w-[10rem] p-3 lg:px-2 md:mx-2 text-white rounded xl:text-sm"
+              >
+                <img class="" src="./images/user.svg" alt="" />
+                <a href="../SME Register/smeRegister.html"><button class="ms-2 text-[16px] xl:text-[16px] lg:text-sm">
+                  Login/Register
+                </button></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+      <!-- section-1 start -->
+    <div
+    class="h-[281px] lg:h-[381px] xl:h-[450px] min-[1500px]:h-[550px] w-100 flex justify-center sm:gap-3 items-center flex-col bg-[url(./img/banner.png)] bg-center bg-no-repeat bg-cover sm:bg-contain text-white"
+  >
+    <span class="font-normal text-lg leading-4 font-[Helvetica]">Our Events</span>
+    <h1 class="text-[30px] sm:text-[45px] font-normal leading-10 font-serif">
+      PAKISTAN EVENT
+    </h1>
+  </div>
+  <!-- section-1 end -->
+  <!-- section-2 start -->
+  <div
+    class="text-[#FB406C] text-center text-2xl md:text-[40px] my-8 leading-10 font-normal mx-4"
+  >
+    <h1>We're excited to see you at the event!!</h1>
+  </div>
+  <!-- section-2 end -->
+  <!-- section-3 start -->
+  <!-- <div class="w-[80%] mx-auto "> -->
+  <div class="container mx-auto py-8">
+    <div>
+      <p class="font-normal ml-4 text-4xl mb-8">Add family member</p>
+      <div class="lg:flex gap-6 mx-4">
+        <div class="lg:w-1/2">
+          <div class="border border-gray-300 bg-white rounded-lg p-4">
+            <div class="md:flex gap-6">
+              <div class="md:w-1/2 w-full mb-4">
+                <label for="frm-whatever" class="leading-[2rem]">Name</label>
+                <div
+                  class="border border-gray-300 text-[#717172] bg-white rounded-lg"
+                >
+                  <input
+                    class="w-full py-2 px-2 bg-white rounded-lg"
+                    type="text"
+                    name=""
+                    id=""
+                  />
+                </div>
+              </div>
+              <div class="md:w-1/2 mb-4">
+                <label for="frm-whatever" class="leading-[2rem]">Age</label>
+                <div
+                  class="relative border border-gray-300 text-[#717172] rounded-lg"
+                >
+                  <select
+                    class="appearance-none w-full py-2 px-2 rounded-lg"
+                    name="whatever"
+                    id="frm-whatever"
+                  >
+                    <option value="">Mark</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700"
+                  >
+                    <i class="fa-solid fa-chevron-down h-4 w-4"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md:flex gap-6">
+              <div class="md:w-1/2 mb-4">
+                <label for="frm-whatever" class="leading-[2rem]"
+                  >Relation</label
+                >
+                <div
+                  class="relative border border-gray-300 text-[#717172] rounded-lg"
+                >
+                  <select
+                    class="appearance-none w-full py-2 px-2 rounded-lg"
+                    name="whatever"
+                    id="frm-whatever"
+                  >
+                    <option value="">Brother</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700"
+                  >
+                    <i class="fa-solid fa-chevron-down h-4 w-4"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2 mb-4">
+                <label for="frm-whatever" class="leading-[2rem]"
+                  >Gender</label
+                >
+                <div
+                  class="relative border border-gray-300 text-[#717172] rounded-lg"
+                >
+                  <select
+                    class="appearance-none w-full py-2 px-2 rounded-lg"
+                    name="whatever"
+                    id="frm-whatever"
+                  >
+                    <option value="">Mark</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                  <div
+                    class="pointer-events-none absolute right-0 top-0 bottom-0 flex items-center px-2 text-gray-700"
+                  >
+                    <i class="fa-solid fa-chevron-down h-4 w-4"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-[#FB406C] w-[90px] text-center text-white font-medium rounded text-sm text-center py-4 font-[Helvetica] max-lg:hidden mt-8"
+          >
+            <button type="button" class="">Add</button>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/2 shadow border-t-2 border-[#FB406C] p-4 my-4 lg:my-0 bg-[#FFFFFF]"
+        >
+          <div
+            class="ml-4 my-4 text-3xl font-[Helvetica] font-bold leading-[34.5px]"
+          >
+            <h1>Details</h1>
+          </div>
+          <div
+            class="flex justify-between my-2 mx-4 font-[Helvetica Light] font-normal text-lg leading-[22.12px]"
+          >
+            <span>User Name</span>
+            <p>Muhammad Bilal Ansari</p>
+          </div>
+          <div
+            class="flex justify-between my-2 mx-4 font-[Helvetica Light] font-normal text-lg leading-[22.12px]"
+          >
+            <p>Seat for family reserved</p>
+            <span>2</span>
+          </div>
+          <div
+            class="flex justify-between my-2 mx-4 font-[Helvetica Light] font-normal text-lg leading-[22.12px]"
+          >
+            <p>Charges for family reserved</p>
+            <span>10 USD</span>
+          </div>
+          <div
+            class="flex justify-between my-6 mx-4 font-[Helvetica Light] font-normal text-lg leading-[22.12px]"
+          >
+            <p>Event Charges</p>
+            <span>100.00 USD</span>
+          </div>
+          <hr class="my-4 mx-4" />
+          <div class="flex justify-between my-4 mx-4">
+            <p class="font-[Helvetica] font-bold text-lg leading-[20.7px]">
+              Total Charges
+            </p>
+            <span class="font-[Helvetica] font-normal leading-[20.7px]"
+              >120.00 USD</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="ml-4 bg-[#FB406C] w-[90px] text-center text-white font-medium rounded text-sm text-center py-4 font-[Helvetica] lg:hidden"
+    >
+      <button type="button" class="">Add</button>
+      <i class="fa-solid fa-plus"></i>
+    </div>
+    <div class="relative overflow-x-auto mx-4">
+      <table class="w-[100%] my-4 mx-auto">
+        <tr class="bg-[#F3F4F6] text-left">
+          <th class="px-8 py-4">Full Name</th>
+          <th class="px-8 py-4">Relation</th>
+          <th class="px-8 py-4">Age</th>
+          <th class="px-8 py-4">Gender</th>
+          <th class="px-8 py-4">Price</th>
+          <th class="px-8 py-4 text-[#D92047]">
+            <i class="fa-solid fa-trash"></i>
+          </th>
+        </tr>
+        <tr class="bg-[#FFFFFF]">
+          <td class="px-8 py-4">Flat Pricese</td>
+          <td class="px-8 py-4">Flat Prices</td>
+          <td class="px-8 py-4">Flat Prices</td>
+          <td class="px-8 py-4">Flat Prices</td>
+          <td class="px-8 py-4">$12</td>
+          <td class="px-8 py-4 text-[#D92047]">
+            <i class="fa-solid fa-trash"></i>
+          </td>
+        </tr>
+        <tr class="bg-[#FFFFFF]">
+          <td class="px-8 py-4">Flat Prices</td>
+          <td class="px-8 py-4">Flat Prices</td>
+          <td class="px-8 py-4">Flat Prices</td>
+          <td class="px-8 py-4">Flat Prices</td>
+          <td class="px-8 py-4">$12</td>
+          <td class="px-8 py-4 text-[#D92047]">
+            <i class="fa-solid fa-trash"></i>
+          </td>
+        </tr>
+      </table>
+      <div
+        class="bg-[#FB406C] w-[90px] text-center text-white font-medium rounded text-sm text-center py-4 my-6 font-[Helvetica]"
+      >
+        <button type="button" class="">Next</button>
+      </div>
+    </div>
+  </div>
+
+      <div
+        class="bg-no-repeat bg-cover bg-[url('images/footerImage.svg')] text-white"
+      >
+        <div class="flex justify-center pt-12">
+          <img class="" src="images/heart.svg" alt="" />
+        </div>
+        <h1
+          class="text-[30px] leading-8 sm:text-[42px] sm:leading-10 text-center my-8 m-7 font-serif"
+        >
+          Please contact us if you have any questions
+        </h1>
+        <div class="container px-4 mx-auto">
+          <div class="flex justify-between gap-8 flex-wrap m-10">
+            <div class="mb-12">
+              <i class="fa-solid fa-phone"></i>
+              <span class="text-[22px] ms-2 font-serif opacity-80"
+                >Give Us A Call</span
+              >
+
+              <br />
+              <a class="ms-7 text-[20px]" href="#">+971 52 204 7059</a>
+              <hr class="ms-7" />
+            </div>
+            <div class="mb-12">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="text-[22px] ms-2 font-serif opacity-80"
+                >Send Us Email</span
+              >
+
+              <br />
+              <a class="ms-7 text-[20px]" href="#">info@smematrimony.com</a>
+              <hr class="ms-7" />
+            </div>
+            <div class="mb-12">
+              <i class="fa-solid fa-location-dot"></i>
+              <span class="text-[22px] ms-2 font-serif opacity-80">
+                Head Office</span
+              >
+
+              <br />
+              <a class="ms-6 text-[22px]" href="#"
+                >224 Dorchester place Waterloo <br class="" />
+                <span class="ms-6 text-[22px]">Ontario n2t2h7 Canada.</span></a
+              >
+              <hr class="ms-6" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-white py-2 md:py-4">
+          <div class="container px-4 mx-auto flex items-center">
+            <div class="flex justify-between items-center me-8">
+              <img
+                class="lg:w-[150px] xl:w-[200px]"
+                src="./images/logo.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="flex flex-wrap ml-auto mt-3 lg:mt-0">
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Home</a
+              >
+
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Matrimonial Events</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Privacy Policy</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Terms & Conditions</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+          <hr class="container px-4 mx-auto mt-5" />
+        </div>
+      </div>
+      <div class="container px-4 mx-auto">
+        <div class="flex justify-between flex-wrap items-center">
+          <p class="text-gray-400 me-7 mt-5 text-[14px]">
+            Copyright © 2023 smematrimony.com - All Rights Reserved.
+          </p>
+          <div class="flex gap-4 mt-5">
+            <i
+              class="fa-brands fa-facebook-f text-white bg-[#FB406C] w-[32px] flex justify-center p-2 rounded-full"
+            ></i>
+            <img
+              class="text-white bg-[#FB406C] p-2 rounded-full"
+              src="images/youtube.svg"
+              alt=""
+            />
+
+            <i
+              class="fa-brands fa-instagram text-white bg-[#FB406C] p-2 rounded-full"
+            ></i>
+
+            <i
+              class="fa-brands fa-whatsapp text-white bg-[#FB406C] p-2 rounded-full"
+            ></i>
+            <i
+              class="fa-brands fa-meetup text-white bg-[#FB406C] p-2 rounded-full"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let toggleBtn = document.querySelector("#navbar-toggle");
+      let collapse = document.querySelector("#navbar-collapse");
+
+      toggleBtn.onclick = () => {
+        collapse.classList.toggle("hidden");
+        collapse.classList.toggle("flex");
+      };
+    </script>
+
+    
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SME Matrimony</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- <style>
+      .fontFamily {
+        font-family: "DM Serif Display", serif;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="font-[Helvetica]">
+      <!-- header div -->
+      <div class="header-2">
+        <nav class="bg-white py-2 md:py-4">
+          <div class="container px-4 mx-auto lg:flex lg:items-center h-auto">
+            <div class="flex justify-between items-center">
+              <img
+                class="w-[200px] lg:w-[150px] xl:w-[200px]"
+                src="./images/logo.svg"
+                alt=""
+              />
+              <button
+                class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+                id="navbar-toggle"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+
+            <div
+              class="hidden lg:flex lg:items-center flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0"
+              id="navbar-collapse"
+            >
+              <a
+                href="../SME Home/index.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Members</a
+              >
+              <a
+                href="../SME Events/Events.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Matrimonial Events</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Chat</a
+              >
+              <a
+                href="../SME Interests/smeInterests.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Interests</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Success Stories</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Plans</a
+              >
+              <div
+                class="bg-[#FB406C] justify-center flex w-[10rem] lg:w-[8rem] xl:w-[10rem] p-3 lg:px-2 md:mx-2 text-white rounded xl:text-sm"
+              >
+                <img class="" src="./images/user.svg" alt="" />
+                <button class="ms-2 text-[16px] xl:text-[16px] lg:text-sm">
+                  <a href="../SME Register/smeRegister.html">Login/Register</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- footer div -->
+      <div>
+        <div
+          class="bg-no-repeat bg-cover bg-[url('images/footerImage.svg')] text-white"
+        >
+          <div class="flex justify-center pt-12">
+            <img class="" src="images/heart.svg" alt="" />
+          </div>
+          <h1
+            class="text-[30px] leading-8 sm:text-[42px] sm:leading-10 text-center my-8 m-7 font-serif"
+          >
+            Please contact us if you have any questions
+          </h1>
+          <div class="container px-4 mx-auto">
+            <div class="flex justify-between gap-8 flex-wrap m-10">
+              <div class="mb-12">
+                <i class="fa-solid fa-phone"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80"
+                  >Give Us A Call</span
+                >
+
+                <br />
+                <a class="ms-7 text-[20px]" href="#">+971 52 204 7059</a>
+                <hr class="ms-7" />
+              </div>
+              <div class="mb-12">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80"
+                  >Send Us Email</span
+                >
+
+                <br />
+                <a class="ms-7 text-[20px]" href="#">info@smematrimony.com</a>
+                <hr class="ms-7" />
+              </div>
+              <div class="mb-12">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80">
+                  Head Office</span
+                >
+
+                <br />
+                <a class="ms-6 text-[22px]" href="#"
+                  >224 Dorchester place Waterloo <br class="" />
+                  <span class="ms-6 text-[22px]"
+                    >Ontario n2t2h7 Canada.</span
+                  ></a
+                >
+                <hr class="ms-6" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-white py-2 md:py-4">
+            <div class="container px-4 mx-auto flex items-center">
+              <div class="flex justify-between items-center me-8">
+                <img
+                  class="lg:w-[150px] xl:w-[200px]"
+                  src="./images/logo.svg"
+                  alt=""
+                />
+              </div>
+
+              <div class="flex flex-wrap ml-auto mt-3 lg:mt-0">
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Home</a
+                >
+
+                <a
+                  href="../SME Events/Events.html"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Matrimonial Events</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Privacy Policy</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Terms & Conditions</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+            <hr class="container px-4 mx-auto mt-5" />
+          </div>
+        </div>
+        <div class="container px-4 mx-auto">
+          <div class="flex justify-between flex-wrap items-center">
+            <p class="text-gray-400 me-7 mt-5 text-[14px]">
+              Copyright © 2023 smematrimony.com - All Rights Reserved.
+            </p>
+            <div class="flex gap-4 mt-5">
+              <i
+                class="fa-brands fa-facebook-f text-white bg-[#FB406C] w-[32px] flex justify-center p-2 rounded-full"
+              ></i>
+              <img
+                class="text-white bg-[#FB406C] p-2 rounded-full"
+                src="images/youtube.svg"
+                alt=""
+              />
+
+              <i
+                class="fa-brands fa-instagram text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+
+              <i
+                class="fa-brands fa-whatsapp text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+              <i
+                class="fa-brands fa-meetup text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let toggleBtn = document.querySelector("#navbar-toggle");
+      let collapse = document.querySelector("#navbar-collapse");
+
+      toggleBtn.onclick = () => {
+        collapse.classList.toggle("hidden");
+        collapse.classList.toggle("flex");
+      };
+    </script>
+  </body>
+</html>

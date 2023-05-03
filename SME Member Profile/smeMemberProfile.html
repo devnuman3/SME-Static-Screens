@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SME Member Profile</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .shadowCustom {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="font-[Helvetica]">
+      <!-- header div -->
+      <div class="header-2">
+        <nav class="bg-white py-2 md:py-4">
+          <div class="container px-4 mx-auto lg:flex lg:items-center h-auto">
+            <div class="flex justify-between items-center">
+              <img
+                class="w-[200px] lg:w-[150px] xl:w-[200px]"
+                src="./images/logo.svg"
+                alt=""
+              />
+              <button
+                class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+                id="navbar-toggle"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+
+            <div
+              class="hidden lg:flex lg:items-center flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0"
+              id="navbar-collapse"
+            >
+              <a
+                href="../SME Home/index.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Members</a
+              >
+              <a
+                href="../SME Events/Events.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Matrimonial Events</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Chat</a
+              >
+              <a
+                href="../SME Interests/smeInterests.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Interests</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Success Stories</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Plans</a
+              >
+              <div
+                class="bg-[#FB406C] justify-center flex w-[10rem] lg:w-[8rem] xl:w-[10rem] p-3 lg:px-2 md:mx-2 text-white rounded xl:text-sm"
+              >
+                <img class="" src="./images/user.svg" alt="" />
+                <button class="ms-2 text-[16px] xl:text-[16px] lg:text-sm">
+                  <a href="../SME Register/smeRegister.html">Login/Register</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Member Profile Code -->
+      <div
+        class="container w-[90%] p-8 font-[Helvetica]"
+        style="margin: 2rem auto"
+      >
+        <div class="md:flex gap-4 p-6 shadowCustom rounded-lg">
+          <div class="md:w-[18%] sm:w-[60%]">
+            <img class="mb-4 w-[100%]" src="images/mainImage.svg" alt="" />
+          </div>
+          <div class="md:w-[82%]">
+            <div class="lg:flex justify-between">
+              <div>
+                <h2 class="text-[32px] mb-4 lg:mb-0">Zarina Saloon</h2>
+              </div>
+              <div class="flex flex-wrap gap-3 text-white">
+                <div class="px-6 py-3 bg-[#FB406C] rounded-lg">
+                  <i class="fas fa-comment-dots"></i>
+                  <button>Message</button>
+                </div>
+                <div class="px-6 py-3 bg-[#FB406C] rounded-lg">
+                  <i class="fa-solid fa-heart"></i>
+                  <button>Like</button>
+                </div>
+                <div class="px-6 py-3 bg-[#FB406C] rounded-lg">
+                  <i class="fa-solid fa-xmark"></i>
+                  <button>Ignore</button>
+                </div>
+                <div class="px-6 py-3 bg-[#FB406C] rounded-lg">
+                  <i class="fa-solid fa-flag"></i>
+                  <button>Report</button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="mt-5">- Introduction here</p>
+              <hr class="my-5" />
+            </div>
+            <div>
+              <table class="sm:text-[20px]">
+                <tr class="">
+                  <td class="md:pr-[15rem] pr-12 text-[#8C8E97] pb-6">
+                    Profile ID#:
+                  </td>
+                  <td class="pb-6">3434</td>
+                </tr>
+                <tr class="">
+                  <td class="md:pr-[15rem] text-[#8C8E97] pb-6">Age</td>
+                  <td class="pb-6">22 years</td>
+                </tr>
+                <tr class="">
+                  <td class="md:pr-[15rem] text-[#8C8E97] pb-6">Location</td>
+                  <td class="pb-6">Lahore, Pakistan</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 p-6 shadowCustom rounded-lg">
+          <p class="text-[20px] font-bold mb-4">Photos</p>
+          <div class="flex gap-3 flex-wrap">
+            <img src="images/image1.svg" alt="" />
+            <img src="images/image2.svg" alt="" />
+            <img src="images/image3.svg" alt="" />
+            <img src="images/image4.svg" alt="" />
+            <img src="images/image2.svg" alt="" />
+            <img src="images/image4.svg" alt="" />
+            <img src="images/image1.svg" alt="" />
+            <img src="images/image3.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="mt-16 p-6 shadowCustom rounded-lg">
+          <p class="text-[20px] font-bold mb-4">Personal Information</p>
+          <table class="sm:text-[20px] border-spacing-96">
+            <tr class="">
+              <td class="sm:pr-[21rem] pr-24 text-[#8C8E97] pb-6">
+                Full Name:
+              </td>
+              <td class="mb-4 pb-6">Zoya Khan</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Gender:</td>
+              <td class="pb-6">Female</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Martial Status:</td>
+              <td class="pb-6">Never Married</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Hight:</td>
+              <td class="">5ft 3in - 160cm</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Date of birth:</td>
+              <td class="pb-6">2023-04-04</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">On Behalf:</td>
+              <td class="pb-6">Self</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Religion:</td>
+              <td class="pb-6">Islam</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97]">Caste:</td>
+              <td class="pb-6">Niazi</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="mt-16 p-6 shadowCustom rounded-lg">
+          <p class="text-[20px] font-bold mb-4">Present Address Information</p>
+          <table class="sm:text-[20px] border-spacing-96">
+            <tr class="">
+              <td class="sm:pr-[22rem] pr-28 text-[#8C8E97] pb-6">Country:</td>
+              <td class="mb-4 pb-6">Pakistan</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">State:</td>
+              <td class="pb-6">Punjab</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">City</td>
+              <td class="pb-6">Lahore</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97]">Nationality:</td>
+              <td class="">Pakistani</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="mt-16 p-6 shadowCustom rounded-lg">
+          <p class="text-[20px] font-bold mb-4">Partner Expectation</p>
+          <table class="sm:text-[20px] border-spacing-96">
+            <tr class="">
+              <td class="sm:pr-[15rem] pr-12 text-[#8C8E97] pb-6">
+                General Requirement:
+              </td>
+              <td class="mb-4 pb-6">
+                respect and kindness, shared values, good communication skills,
+                trustworthiness
+              </td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Specialization:</td>
+              <td class="pb-6">History</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Occupation</td>
+              <td class="pb-6">Teacher</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Working with:</td>
+              <td class="pb-6">Google</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97]">Annually Income</td>
+              <td class="">$78000 to $80000</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="mt-16 p-6 shadowCustom rounded-lg">
+          <p class="text-[20px] font-bold mb-4">Education & Career</p>
+          <table class="sm:text-[20px] border-spacing-96">
+            <tr class="">
+              <td class="sm:pr-[21rem] pr-24 text-[#8C8E97] pb-6">
+                Education:
+              </td>
+              <td class="mb-4 pb-6">Undergraduate</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Specialization:</td>
+              <td class="pb-6">History</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Occupation</td>
+              <td class="pb-6">Teacher</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Working with:</td>
+              <td class="pb-6">Google</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97]">Annually Income</td>
+              <td class="">$78000 to $80000</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="mt-16 p-6 shadowCustom rounded-lg">
+          <p class="text-[20px] font-bold mb-4">Personal Information</p>
+          <table class="sm:text-[20px] border-spacing-96">
+            <tr class="">
+              <td class="sm:pr-[15rem] pr-12 text-[#8C8E97] pb-6">
+                Appearance:
+              </td>
+              <td class="mb-4 pb-6">
+                188 cm, 91 kg, athletic build, brown hair and brown eyes
+              </td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Age</td>
+              <td class="pb-6">20 -28</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Hight:</td>
+              <td class="pb-6">5ft 3in - 160cm</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Weight</td>
+              <td class="pb-6">50 kg - 70 kg</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Martial Status:</td>
+              <td class="">Never Married</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] pr-12 text-[#8C8E97] pb-6">
+                Children Acceptable:
+              </td>
+              <td class="mb-4 pb-6">No, and I'm looking without children</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Caste:</td>
+              <td class="pb-6">Niazi</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Religion:</td>
+              <td class="pb-6">Islam</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">
+                Country of Residence
+              </td>
+              <td class="pb-6">Pakistan</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">
+                Availability of a car:
+              </td>
+              <td class="">There are</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] pr-12 text-[#8C8E97] pb-6">
+                Education:
+              </td>
+              <td class="mb-4 pb-6">Higher</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Profession</td>
+              <td class="pb-6">Any</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Complexion</td>
+              <td class="pb-6">---</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Drinking Habit:</td>
+              <td class="pb-6">I don't drink, but I don't mind</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Smoking Habit:</td>
+              <td class="">Against smoking</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] pr-12 text-[#8C8E97] pb-6">Diet</td>
+              <td class="mb-4 pb-6">---</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Body Type:</td>
+              <td class="pb-6">---</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Personal Value</td>
+              <td class="pb-6">---</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Manglik :</td>
+              <td class="pb-6">No</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Any Disability</td>
+              <td class="">No</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] pr-12 text-[#8C8E97] pb-6">
+                Mother Tongue :
+              </td>
+              <td class="mb-4 pb-6">---</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">
+                Preferred Status
+              </td>
+              <td class="pb-6">---</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">Family Value</td>
+              <td class="pb-6">---</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97] pb-6">
+                Preferred Country
+              </td>
+              <td class="pb-6">Pakistan</td>
+            </tr>
+            <tr class="">
+              <td class="sm:pr-[15rem] text-[#8C8E97]">Preferred State</td>
+              <td class="">Punjab</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- footer div -->
+      <div>
+        <div
+          class="bg-no-repeat bg-cover bg-[url('images/footerImage.svg')] text-white"
+        >
+          <div class="flex justify-center pt-12">
+            <img class="" src="images/heart.svg" alt="" />
+          </div>
+          <h1
+            class="text-[30px] leading-8 sm:text-[42px] sm:leading-10 text-center my-8 m-7 font-serif"
+          >
+            Please contact us if you have any questions
+          </h1>
+          <div class="container px-4 mx-auto">
+            <div class="flex justify-between gap-8 flex-wrap m-10">
+              <div class="mb-12">
+                <i class="fa-solid fa-phone"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80"
+                  >Give Us A Call</span
+                >
+
+                <br />
+                <a class="ms-7 text-[20px]" href="#">+971 52 204 7059</a>
+                <hr class="ms-7" />
+              </div>
+              <div class="mb-12">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80"
+                  >Send Us Email</span
+                >
+
+                <br />
+                <a class="ms-7 text-[20px]" href="#">info@smematrimony.com</a>
+                <hr class="ms-7" />
+              </div>
+              <div class="mb-12">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="text-[22px] ms-2 font-serif opacity-80">
+                  Head Office</span
+                >
+
+                <br />
+                <a class="ms-6 text-[22px]" href="#"
+                  >224 Dorchester place Waterloo <br class="" />
+                  <span class="ms-6 text-[22px]"
+                    >Ontario n2t2h7 Canada.</span
+                  ></a
+                >
+                <hr class="ms-6" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-white py-2 md:py-4">
+            <div class="container px-4 mx-auto flex items-center">
+              <div class="flex justify-between items-center me-8">
+                <img
+                  class="lg:w-[150px] xl:w-[200px]"
+                  src="./images/logo.svg"
+                  alt=""
+                />
+              </div>
+
+              <div class="flex flex-wrap ml-auto mt-3 lg:mt-0">
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Home</a
+                >
+
+                <a
+                  href="../SME Events/Events.html"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Matrimonial Events</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Privacy Policy</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Terms & Conditions</a
+                >
+                <a
+                  href="#"
+                  class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+            <hr class="container px-4 mx-auto mt-5" />
+          </div>
+        </div>
+        <div class="container px-4 mx-auto">
+          <div class="flex justify-between flex-wrap items-center">
+            <p class="text-gray-400 me-7 mt-5 text-[14px]">
+              Copyright © 2023 smematrimony.com - All Rights Reserved.
+            </p>
+            <div class="flex gap-4 mt-5">
+              <i
+                class="fa-brands fa-facebook-f text-white bg-[#FB406C] w-[32px] flex justify-center p-2 rounded-full"
+              ></i>
+              <img
+                class="text-white bg-[#FB406C] p-2 rounded-full"
+                src="images/youtube.svg"
+                alt=""
+              />
+
+              <i
+                class="fa-brands fa-instagram text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+
+              <i
+                class="fa-brands fa-whatsapp text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+              <i
+                class="fa-brands fa-meetup text-white bg-[#FB406C] p-2 rounded-full"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let toggleBtn = document.querySelector("#navbar-toggle");
+      let collapse = document.querySelector("#navbar-collapse");
+
+      toggleBtn.onclick = () => {
+        collapse.classList.toggle("hidden");
+        collapse.classList.toggle("flex");
+      };
+    </script>
+  </body>
+</html>

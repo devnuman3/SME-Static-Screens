@@ -4,29 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>SME ||Matrimony</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SME Matrimony</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
   </head>
   <body>
-    <!-- sect-1 start -->
-      <div class= "flex justify-center flex-col items-center text-white w-100 h-[400px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/banner.png);">
+    <div class="font-[Helvetica]">
+      <div class="header-2">
+        <nav class="bg-white py-2 md:py-4">
+          <div class="container px-4 mx-auto lg:flex lg:items-center h-auto">
+            <div class="flex justify-between items-center">
+              <img
+                class="w-[200px] lg:w-[150px] xl:w-[200px]"
+                src="./images/logo.svg"
+                alt=""
+              />
+              <button
+                class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 lg:hidden"
+                id="navbar-toggle"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+
+            <div
+              class="hidden lg:flex lg:items-center flex-col lg:flex-row lg:ml-auto mt-3 lg:mt-0"
+              id="navbar-collapse"
+            >
+              <a
+                href="../SME Home/index.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Home</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Members</a
+              >
+              <a
+                href="../SME Events/Events.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Matrimonial Events</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Chat</a
+              >
+              <a
+                href="../SME Interests/smeInterests.html"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Interests</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Success Stories</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[16px] xl:text-[16px] lg:px-2 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300 lg:text-sm"
+                >Plans</a
+              >
+              <div
+                class="bg-[#FB406C] justify-center flex w-[10rem] lg:w-[8rem] xl:w-[10rem] p-3 lg:px-2 md:mx-2 text-white rounded xl:text-sm"
+              >
+                <img class="" src="./images/user.svg" alt="" />
+                <button class="ms-2 text-[16px] xl:text-[16px] lg:text-sm">
+                  <a href="../SME Register/smeRegister.html">Login/Register</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+       <!-- sect-1 start -->
+      <div class= "h-[281px] lg:h-[381px] xl:h-[450px] min-[1500px]:h-[550px] w-100 flex justify-center sm:gap-3 items-center flex-col bg-[url(./images/banner.png)] bg-center bg-no-repeat bg-cover sm:bg-contain text-white">
           <span class="font-normal text-lg leading-4">Our Events</span>
           <h1 class="text-5xl font-normal leading-10 max-md:text-3xl">Matrimonial Events</h1>
           <p class=" pt-3 font-normal leading-7 text-base">Matrimonial Events Description </p>
         </div>
     
             <!-- sect-1 end -->
+
         <!-- search-bar start -->
 
-            <div class="w-full my-14 ">
+        <div class="w-full my-14 ">
               
-              <div class="relative bg-white w-[65%] my-0 mx-auto border-r-4" style="box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);">
-                <i class="text-[#FB406C] absolute fa fa-search  top-5 left-4 font-normal text-base	"></i>
-                <input type="text" placeholder="Search Members..." class="bg-white h-14 w-full  px-12 rounded-lg font-normal text-base text-[#757575] max-sm:text-xs	" name="">
-                <!-- <span class="absolute top-4 right-5 border-l pl-4"></span> -->
-              </div>
-            </div>
+          <div class="relative bg-white w-[65%] my-0 mx-auto border-r-4" style="box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);">
+            <i class="text-[#FB406C] absolute fa fa-search  top-5 left-4 font-normal text-base	"></i>
+            <input type="text" placeholder="Search Members..." class="bg-white h-14 w-full  px-12 rounded-lg font-normal text-base text-[#757575] max-sm:text-xs	" name="">
+            <!-- <span class="absolute top-4 right-5 border-l pl-4"></span> -->
+          </div>
+        </div>
 
         <!-- search-bar end -->
         <div class="text-[#FB406C] text-center text-4xl max-md:text-3xl my-8 leading-10 font-normal">
@@ -34,7 +107,7 @@
         </div>
         <!-- section-2 start -->
         
-        <div class="container my-12 mx-auto px-4 md:px-12">
+        <div class="container w-[90%] my-12 mx-auto px-4 md:px-12">
           <div class="flex flex-wrap -mx-1 lg:-mx-4">
       
               <!-- Column -->
@@ -64,7 +137,7 @@
                           </a>
                           <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                       </footer>
-                      <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                      <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
 
                   </article>
                   <!-- END Article -->
@@ -100,7 +173,7 @@
                           </a>
                           <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                       </footer>
-                      <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                      <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
                   </article>
                   <!-- END Article -->
       
@@ -136,7 +209,7 @@
                         <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                     </footer>
                     <!-- <div class="rounded-md border-2 bg-pink-500 border-red-500 font-bold p-2 my-2 text-center text-white">View Details</div> -->
-                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
                 </article>
                 <!-- END Article -->
     
@@ -171,7 +244,7 @@
                         <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                     </footer>
                     <!-- <div class="rounded-md border-2 bg-pink-500 border-red-500 font-bold p-2 my-2 text-center text-white">View Details</div> -->
-                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
                 </article>
                 <!-- END Article -->
     
@@ -207,7 +280,7 @@
                         <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                     </footer>
                     <!-- <div class="rounded-md border-2 bg-pink-500 border-red-500 font-bold p-2 my-2 text-center text-white">View Details</div> -->
-                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
                 </article>
                 <!-- END Article -->
     
@@ -243,7 +316,7 @@
                         <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                     </footer>
                     <!-- <div class="rounded-md border-2 bg-pink-500 border-red-500 font-bold p-2 my-2 text-center text-white">View Details</div> -->
-                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
                 </article>
                 <!-- END Article -->
     
@@ -256,7 +329,7 @@
       <div class="max-md:text-3xl text-[#FB406C] text-center text-4xl my-8 leading-10 font-normal">
         <h1>Past Events</h1>
       </div>
-      <div class="container my-12 mx-auto px-4 md:px-12">
+      <div class="container w-[90%] my-12 mx-auto px-4 md:px-12">
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
     
             <!-- Column -->
@@ -286,7 +359,7 @@
                         </a>
                         <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                     </footer>
-                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
 
                 </article>
                 <!-- END Article -->
@@ -301,7 +374,7 @@
                 <article class="overflow-hidden rounded-lg shadow-lg">
     
                    
-                        <img alt="Placeholder" class="block h-auto w-full" src="./images//mid.jpg.png">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./images/mid.jpg.png">
                     
     
                     <header class="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -322,7 +395,7 @@
                         </a>
                         <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                     </footer>
-                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                    <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
                 </article>
                 <!-- END Article -->
     
@@ -358,7 +431,7 @@
                       <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                   </footer>
                   <!-- <div class="rounded-md border-2 bg-pink-500 border-red-500 font-bold p-2 my-2 text-center text-white">View Details</div> -->
-                  <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                  <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
               </article>
               <!-- END Article -->
   
@@ -372,7 +445,7 @@
               <article class="overflow-hidden rounded-lg shadow-lg">
   
                  
-                      <img alt="Placeholder" class="block h-auto w-full" src="./images//mid.jpg.png">
+                      <img alt="Placeholder" class="block h-auto w-full" src="./images/mid.jpg.png">
                   
   
                   <header class="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -393,7 +466,7 @@
                       <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                   </footer>
                   <!-- <div class="rounded-md border-2 bg-pink-500 border-red-500 font-bold p-2 my-2 text-center text-white">View Details</div> -->
-                  <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                  <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
               </article>
               <!-- END Article -->
   
@@ -429,7 +502,7 @@
                       <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                   </footer>
                   <!-- <div class="rounded-md border-2 bg-pink-500 border-red-500 font-bold p-2 my-2 text-center text-white">View Details</div> -->
-                  <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                  <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
               </article>
               <!-- END Article -->
   
@@ -465,7 +538,7 @@
                       <p class="flex items-center gap-1 mt-2 text-[#1BAACC] font-normal text-sm font-[Helvetica]"><i class="fa fa-clock-o" aria-hidden="true"></i>Mar 28,2023</p>
                   </footer>
                   <!-- <div class="rounded-md border-2 bg-pink-500 border-red-500 font-bold p-2 my-2 text-center text-white">View Details</div> -->
-                  <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]">View Details</button>
+                  <button class="rounded-bl-lg border-2 bg-[#FB406C]  border-[#FB406C] p-2 w-full	 text-center text-white font-normal text-base font-[Helvetica]"><a href="../SME-Event-Description.html">View Details</a></button>
               </article>
               <!-- END Article -->
   
@@ -474,6 +547,138 @@
     
         </div>
     </div>
+
+      <div
+        class="bg-no-repeat bg-cover bg-[url('images/footerImage.svg')] text-white"
+      >
+        <div class="flex justify-center pt-12">
+          <img class="" src="images/heart.svg" alt="" />
+        </div>
+        <h1
+          class="text-[30px] leading-8 sm:text-[42px] sm:leading-10 text-center my-8 m-7 font-serif"
+        >
+          Please contact us if you have any questions
+        </h1>
+        <div class="container px-4 mx-auto">
+          <div class="flex justify-between gap-8 flex-wrap m-10">
+            <div class="mb-12">
+              <i class="fa-solid fa-phone"></i>
+              <span class="text-[22px] ms-2 font-serif opacity-80"
+                >Give Us A Call</span
+              >
+
+              <br />
+              <a class="ms-7 text-[20px]" href="#">+971 52 204 7059</a>
+              <hr class="ms-7" />
+            </div>
+            <div class="mb-12">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="text-[22px] ms-2 font-serif opacity-80"
+                >Send Us Email</span
+              >
+
+              <br />
+              <a class="ms-7 text-[20px]" href="#">info@smematrimony.com</a>
+              <hr class="ms-7" />
+            </div>
+            <div class="mb-12">
+              <i class="fa-solid fa-location-dot"></i>
+              <span class="text-[22px] ms-2 font-serif opacity-80">
+                Head Office</span
+              >
+
+              <br />
+              <a class="ms-6 text-[22px]" href="#"
+                >224 Dorchester place Waterloo <br class="" />
+                <span class="ms-6 text-[22px]">Ontario n2t2h7 Canada.</span></a
+              >
+              <hr class="ms-6" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-white py-2 md:py-4">
+          <div class="container px-4 mx-auto flex items-center">
+            <div class="flex justify-between items-center me-8">
+              <img
+                class="lg:w-[150px] xl:w-[200px]"
+                src="./images/logo.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="flex flex-wrap ml-auto mt-3 lg:mt-0">
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Home</a
+              >
+
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Matrimonial Events</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Privacy Policy</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Terms & Conditions</a
+              >
+              <a
+                href="#"
+                class="p-1 text-[13px] lg:px-2 mx-2 text-gray-600 rounded transition-colors duration-300"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+          <hr class="container px-4 mx-auto mt-5" />
+        </div>
+      </div>
+      <div class="container px-4 mx-auto">
+        <div class="flex justify-between flex-wrap items-center">
+          <p class="text-gray-400 me-7 mt-5 text-[14px]">
+            Copyright © 2023 smematrimony.com - All Rights Reserved.
+          </p>
+          <div class="flex gap-4 mt-5">
+            <i
+              class="fa-brands fa-facebook-f text-white bg-[#FB406C] w-[32px] flex justify-center p-2 rounded-full"
+            ></i>
+            <img
+              class="text-white bg-[#FB406C] p-2 rounded-full"
+              src="images/youtube.svg"
+              alt=""
+            />
+
+            <i
+              class="fa-brands fa-instagram text-white bg-[#FB406C] p-2 rounded-full"
+            ></i>
+
+            <i
+              class="fa-brands fa-whatsapp text-white bg-[#FB406C] p-2 rounded-full"
+            ></i>
+            <i
+              class="fa-brands fa-meetup text-white bg-[#FB406C] p-2 rounded-full"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let toggleBtn = document.querySelector("#navbar-toggle");
+      let collapse = document.querySelector("#navbar-collapse");
+
+      toggleBtn.onclick = () => {
+        collapse.classList.toggle("hidden");
+        collapse.classList.toggle("flex");
+      };
+    </script>
   </body>
   <script
   src="https://kit.fontawesome.com/63e8927567.js"
